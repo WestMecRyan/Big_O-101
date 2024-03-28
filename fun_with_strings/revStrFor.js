@@ -1,4 +1,4 @@
-let someStr = "Hello";
+let someStr;
 
 function revStrFor(str) { 
     let revStr = "";
@@ -7,8 +7,16 @@ function revStrFor(str) {
     }
     return revStr;
 }
+function buildStr(n) { 
+    let str = "";
+    for (let i = 1; i <= n; i++) { 
+        str += i;
+    }
+    return str;
+}
+someStr = buildStr(20);
 console.time('for loop reverse string');
 revStrFor(someStr);
 console.timeEnd('for loop reverse string');
 
-// console.log(revStrFor(someStr));
+console.log(revStrFor(someStr));
