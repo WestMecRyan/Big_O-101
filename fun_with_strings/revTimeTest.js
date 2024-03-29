@@ -45,5 +45,6 @@ showTimeArr(1000);
 showTime(10000);
 showTimeArr(10000);
 showTime(100000);
-showTimeArr(1000000);
+showTimeArr(100000);
 showTime(1000000);
+showTimeArr(1000000);
