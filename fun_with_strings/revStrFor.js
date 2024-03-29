@@ -1,5 +1,5 @@
 let someStr;
-
+let charCount;
 function revStrFor(str) { 
     let revStr = "";
     for (let i = str.length - 1; i >= 0; i--) { 
@@ -10,13 +10,42 @@ function revStrFor(str) {
 function buildStr(n) { 
     let str = "";
     for (let i = 1; i <= n; i++) { 
-        str += i;
+        str += "a";
     }
     return str;
 }
-someStr = buildStr(20);
-console.time('for loop reverse string');
+charCount = 10;
+someStr = buildStr(charCount);
+console.time(`for loop reverse string ${charCount}`);
 revStrFor(someStr);
-console.timeEnd('for loop reverse string');
+console.timeEnd(`for loop reverse string ${charCount}`);
+charCount = 100;
+someStr = buildStr(charCount);
+console.time(`for loop reverse string ${charCount}`);
+revStrFor(someStr);
+console.timeEnd(`for loop reverse string ${charCount}`);
+charCount = 1000;
+someStr = buildStr(charCount);
+console.time(`for loop reverse string ${charCount}`);
+revStrFor(someStr);
+console.timeEnd(`for loop reverse string ${charCount}`);
 
-console.log(revStrFor(someStr));
+charCount = 10000;
+someStr = buildStr(charCount);
+console.time(`for loop reverse string ${charCount}`);
+revStrFor(someStr);
+console.timeEnd(`for loop reverse string ${charCount}`);
+
+charCount = 100000;
+someStr = buildStr(charCount);
+console.time(`for loop reverse string ${charCount}`);
+revStrFor(someStr);
+console.timeEnd(`for loop reverse string ${charCount}`);
+
+
+charCount = 1000000;
+someStr = buildStr(charCount);
+console.time(`for loop reverse string ${charCount}`);
+revStrFor(someStr);
+console.timeEnd(`for loop reverse string ${charCount}`);
+// console.log(revStrFor(someStr));
